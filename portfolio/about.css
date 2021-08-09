@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/* navbar */
+.navbar {
+  display: flex;
+
+  align-items: center;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+}
+.nav-container {
+  justify-content: space-between;
+  justify-items: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  padding: 0 80px;
+}
+.navbar .logo a {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  margin: 0 0;
+}
+.lio {
+  color: red;
+}
+.navbar .nav-list {
+  display: flex;
+  margin: 20px 0;
+  list-style: none;
+  padding: 0 80px;
+  justify-content: flex-end;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.navbar .nav-list li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar .nav-list li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+  float: right;
+  justify-content: end;
+}
+.navbar .nav-list li a:hover {
+  background-color: black;
+  color: goldenrod;
+  box-shadow: 0 0 10px;
+}
+about {
+  padding: 80px 0;
+}
+
+.about .me {
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 60px;
+  font-size: 40px;
+
+  font-family: sans-serif;
+}
+.about .me::before {
+  content: "";
+  position: absolute;
+  padding: 0;
+  width: 210px;
+  height: 3px;
+  background-color: crimson;
+  margin-left: auto;
+  margin-right: auto;
+
+  transform: translateY(60px);
+}
+
+.about .image img {
+  height: 400px;
+  width: 500px;
+  object-fit: cover;
+  margin: 0px 60px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.row .info {
+  justify-content: center;
+}
+.info .name {
+  text-align: center;
+  margin: 2px 0;
+  padding: 0;
+  font-family: cursive;
+}
+.info .about-me {
+  text-align: center;
+  margin: 0 20px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+}
+.info .button .Download {
+  align-content: center;
+  padding-left: 100px;
+}
+.info .cv {
+  background-color: red;
+  border: 2px solid red;
+  border-radius: 4px;
+
+  font-size: 15px;
+  align-items: center;
+  color: white;
+  transition: 0.3s ease;
+  justify-content: center;
+}
+.info .cv:hover {
+  background-color: gold;
+  color: white;
+  box-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue;
+  cursor: pointer;
+}
